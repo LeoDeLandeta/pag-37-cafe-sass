@@ -1,0 +1,58 @@
+@use'variables' as v;
+
+.container-hero{
+    background-color: v.$background-color;
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .customer-support{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        i{
+            font-size: 3.3rem;
+        }
+        .content-customer-support{
+           display: flex;
+           flex-direction: column;
+        }
+    }
+    .container-logo{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        i{
+            font-size: 3rem;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+    }
+    .container-user{
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+        .fa-user{
+            font-size: 3rem;
+            color: v.$primary-color;
+            padding-right: 2.5rem;
+            border-right: 1px solid #e2e2e2;
+        }
+        .fa-basket-shopping{
+            font-size: 3rem;
+            color: v.$primary-color;
+            padding-left: 1rem;
+        }
+        .content-shopping-cart{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

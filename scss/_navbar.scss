@@ -1,0 +1,86 @@
+@use'variables' as v;
+
+.container-navbar{
+    background-color: v.$primary-color;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        .fa-bars{
+           display: none;
+        }
+        .menu{
+            display: flex;
+            gap: 2rem;
+            li{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                font-size: 1.3rem;
+                color: v.$dark-color;
+                font-weight: 600;
+                text-transform: uppercase;
+                position: relative;
+            }
+            ::after {
+                content: '';
+                width: 1.5rem;
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                bottom: -3px;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+            a:hover::after{
+                opacity: 1;
+            }
+            a:hover{
+                color: #fff;
+            }
+            
+        }
+        .search-form{
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 2px solid #fff;
+            border-radius: 2rem;
+            background-color: #fff;
+            height: 4.4rem;
+            overflow: hidden;
+            input{
+                outline: none;
+                font-family: inherit;
+                border: none;
+                width: 25rem;
+                font-size: 1.4rem;
+                padding: 0 2rem;
+                color: #000;
+                cursor: pointer;
+            }
+            /*input::-webkit-search-cancel-button {
+                appearance: none;
+            }
+            */
+            .btn-search{
+                border: none;
+                background-color: v.$primary-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                padding: 1rem;
+                i{
+                   font-size: 2rem;
+                   color: #fff;
+                }
+            }
+        }
+       
+    }
+}

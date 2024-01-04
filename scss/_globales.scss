@@ -1,0 +1,21 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*utilidades*/
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.heading-1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
